@@ -22,5 +22,5 @@ q
 EOF
 
 #/dev/sdb1, 2 is ext2
-sudo mkfs -t ext2 -F "${LFS_DISK}1"
-sudo mkfs -t ext2 -F "${LFS_DISK}2"
+# sudo mkfs -t ext2 -F "${LFS_DISK}1"
+# sudo mkfs -t ext2 -F "${LFS_DISK}2"

@@ -9,7 +9,7 @@ export LFS_DISK=/dev/sdb
 if ! grep -q "$LFS" /proc/mounts; then
     source setupdisk.sh "$LFS_DISK"
     sudo mount "${LFS_DISK}2" "$LFS" #mount /dev/sdb2 to /mnt/lfs
-    sudo chown -v $USER "$LFS"
+    sudo chown -v lambt9 "$LFS" #for mkdir later not need to root
 fi
 
 #for linux from scratch system
@@ -21,10 +21,17 @@ mkdir -pv $LFS/boot
 mkdir -pv $LFS/etc
 mkdir -pv $LFS/bin
 mkdir -pv $LFS/lib
+mkdir -pv $LFS/lib64
 mkdir -pv $LFS/sbin
 mkdir -pv $LFS/usr
 mkdir -pv $LFS/var
 
-echo $LFS_TGT | grep -qs '64'; then
-    mkdir -pv $LFS/lib64
-fi
+cp -rf *.sh chapter* package.csv "$LFS/sources"
+cd "$LFS/sources"
+export PATH="$LFS/tools/bin:$PATH"
+
+source download.sh
+
+source packageinstall.sh 5 binutils
+
+
