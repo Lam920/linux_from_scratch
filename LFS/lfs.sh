@@ -32,6 +32,9 @@ export PATH="$LFS/tools/bin:$PATH"
 
 source download.sh
 
-source packageinstall.sh 5 binutils
+#binutils, gcc linux-6.10.5 glibc libstdc++
+for package in libstdc++; do
+    source packageinstall.sh 5 $package
+done
 
 
