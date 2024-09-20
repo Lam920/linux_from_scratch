@@ -1,11 +1,19 @@
 mkdir mpfr gmp mpc
-tar -xf ../mpfr-*.tar.xz -C mpfr   --strip-components=1
-tar -xf ../gmp-*.tar.xz -C gmp   --strip-components=1
-tar -xf ../mpc-*.tar.gz -C mpc   --strip-components=1
+# tar -xf ../mpfr-*.tar.xz -C mpfr   --strip-components=1
+# tar -xf ../gmp-*.tar.xz -C gmp   --strip-components=1
+# tar -xf ../mpc-*.tar.gz -C mpc   --strip-components=1
 
-mv -v mpfr-* mpfr
-mv -v gmp-* gmp
-mv -v mpc-* mpc
+# mv -v mpfr-* mpfr
+# mv -v gmp-* gmp
+# mv -v mpc-* mpc
+
+
+tar -xf ../mpfr-4.2.1.tar.xz
+mv -v mpfr-4.2.1 mpfr
+tar -xf ../gmp-6.3.0.tar.xz
+mv -v gmp-6.3.0 gmp
+tar -xf ../mpc-1.3.1.tar.gz
+mv -v mpc-1.3.1 mpc
 
 case $(uname -m) in
     x86_64)

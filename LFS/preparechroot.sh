@@ -6,15 +6,15 @@ if [ "$LFS" == "" ]; then
 fi
 
 #give root privilege for all folder in usb partition stick
-sudo chown -R lambt9:lambt9 $LFS/tools
-sudo chown -R lambt9:lambt9 $LFS/boot
-sudo chown -R lambt9:lambt9 $LFS/etc
-sudo chown -R lambt9:lambt9 $LFS/bin
-sudo chown -R lambt9:lambt9 $LFS/lib
-sudo chown -R lambt9:lambt9 $LFS/lib64
-sudo chown -R lambt9:lambt9 $LFS/sbin
-sudo chown -R lambt9:lambt9 $LFS/usr
-sudo chown -R lambt9:lambt9 $LFS/var
+sudo chown -R root:root $LFS/tools
+sudo chown -R root:root $LFS/boot
+sudo chown -R root:root $LFS/etc
+sudo chown -R root:root $LFS/bin
+sudo chown -R root:root $LFS/lib
+sudo chown -R root:root $LFS/lib64
+sudo chown -R root:root $LFS/sbin
+sudo chown -R root:root $LFS/usr
+sudo chown -R root:root $LFS/var
 
 mkdir -pv $LFS/dev
 mkdir -pv $LFS/proc
