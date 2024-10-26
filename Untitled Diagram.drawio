@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:131.0) Gecko/20100101 Firefox/131.0" version="24.8.3">
   <diagram name="Page-1" id="MQVkfiVfp2WGuZAfBH7I">
-    <mxGraphModel dx="467" dy="290" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="574" dy="329" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -100,7 +100,7 @@
           <mxGeometry x="240" y="200" width="120" height="10" as="geometry" />
         </mxCell>
         <mxCell id="dtvVOa7GaX0EYQpvskhJ-45" value="&lt;font style=&quot;font-size: 7px;&quot;&gt;&lt;b&gt;R-X&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="355" y="190" width="40" height="30" as="geometry" />
+          <mxGeometry x="360" y="180" width="40" height="30" as="geometry" />
         </mxCell>
         <mxCell id="dtvVOa7GaX0EYQpvskhJ-46" value="128 MB" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="560" y="380" width="60" height="30" as="geometry" />
@@ -146,6 +146,114 @@
             <mxPoint x="360" y="390" as="sourcePoint" />
             <mxPoint x="440" y="390" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="dtvVOa7GaX0EYQpvskhJ-59" value="4MB" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="555" y="575" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dtvVOa7GaX0EYQpvskhJ-60" value="Only access in M mode" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="640" y="615" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dtvVOa7GaX0EYQpvskhJ-61" value="kalloc to allocate" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="135" y="318" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dtvVOa7GaX0EYQpvskhJ-64" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="dtvVOa7GaX0EYQpvskhJ-44">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="370" y="240" as="sourcePoint" />
+            <mxPoint x="400" y="470" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="400" y="205" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dtvVOa7GaX0EYQpvskhJ-66" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;entryX=0;entryY=0.826;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="dtvVOa7GaX0EYQpvskhJ-13">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="470" as="sourcePoint" />
+            <mxPoint x="450" y="420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dtvVOa7GaX0EYQpvskhJ-67" value="&lt;div&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;Trampoline page is located in Kernel Text&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;TRAPFRAME is located at kernel stack when a trap occur&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;==&amp;gt; This trapframe will be stored in struct trapframe when context switch&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;&amp;nbsp;happen.&lt;br&gt;&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="585" y="160" width="280" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="dtvVOa7GaX0EYQpvskhJ-68" value="Physical address" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="445" y="170" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dtvVOa7GaX0EYQpvskhJ-69" value="Virtual Address" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="245" y="170" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dtvVOa7GaX0EYQpvskhJ-70" value="&lt;div&gt;Each process has a kstack in Kernel space to store&lt;/div&gt;&lt;div&gt;state of process&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="580" y="230" width="290" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="dtvVOa7GaX0EYQpvskhJ-71" value="" style="endArrow=classic;html=1;rounded=0;strokeWidth=3;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="170" y="860" as="sourcePoint" />
+            <mxPoint x="360" y="860" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dtvVOa7GaX0EYQpvskhJ-72" value="TRAP" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="160" y="830" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dtvVOa7GaX0EYQpvskhJ-74" value="&lt;div align=&quot;left&quot;&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;ints &amp;lt;-- disable&lt;/font&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;Mode &amp;lt;-- S&lt;/font&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;sepc &amp;lt;-- PC&lt;/font&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;scause : cause TRAP&lt;br&gt;&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="180" y="860" width="110" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="dtvVOa7GaX0EYQpvskhJ-81" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="dtvVOa7GaX0EYQpvskhJ-78" target="dtvVOa7GaX0EYQpvskhJ-80">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dtvVOa7GaX0EYQpvskhJ-78" value="uservec" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="890" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="dtvVOa7GaX0EYQpvskhJ-90" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="dtvVOa7GaX0EYQpvskhJ-80" target="dtvVOa7GaX0EYQpvskhJ-89">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dtvVOa7GaX0EYQpvskhJ-80" value="usertrap()" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="327.5" y="990" width="65" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="dtvVOa7GaX0EYQpvskhJ-82" value="&lt;div align=&quot;left&quot;&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;save regs, PC in &lt;font color=&quot;#3399ff&quot;&gt;&lt;b&gt;trapframe&lt;/b&gt;&lt;/font&gt;&lt;/font&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;Restore kernel&#39;s&lt;b&gt; &lt;font color=&quot;#e01b24&quot;&gt;sp, tp&lt;/font&gt;&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;&lt;font color=&quot;#62a0ea&quot;&gt;&lt;b&gt;satp&lt;/b&gt;&lt;/font&gt;: Redirect to kernel page table&lt;/font&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;jump to usertrap()&lt;br&gt;&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="355" y="910" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="dtvVOa7GaX0EYQpvskhJ-84" value="" style="line;strokeWidth=2;direction=south;html=1;" vertex="1" parent="1">
+          <mxGeometry x="355" y="860" width="10" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dtvVOa7GaX0EYQpvskhJ-85" value="" style="edgeStyle=isometricEdgeStyle;endArrow=none;html=1;rounded=0;strokeWidth=0.25;" edge="1" parent="1">
+          <mxGeometry width="50" height="100" relative="1" as="geometry">
+            <mxPoint x="389.2" y="895" as="sourcePoint" />
+            <mxPoint x="440" y="860" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dtvVOa7GaX0EYQpvskhJ-87" value=".s in trampoline page" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="425" y="838" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dtvVOa7GaX0EYQpvskhJ-88" value="&lt;font style=&quot;font-size: 9px;&quot;&gt;stvec &amp;lt;-- kernel&#39;s trap vector&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="390" y="985" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dtvVOa7GaX0EYQpvskhJ-92" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="dtvVOa7GaX0EYQpvskhJ-89" target="dtvVOa7GaX0EYQpvskhJ-91">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dtvVOa7GaX0EYQpvskhJ-89" value="usertrapret()" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="327.5" y="1060" width="65" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="dtvVOa7GaX0EYQpvskhJ-91" value="userret" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="327.5" y="1155" width="65" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="dtvVOa7GaX0EYQpvskhJ-93" value="&lt;font style=&quot;font-size: 9px;&quot;&gt;.s in trampoline page&lt;br&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="385" y="1150" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dtvVOa7GaX0EYQpvskhJ-94" value="&lt;div&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;ints &amp;lt;-- DISABLED&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;stvec &amp;lt;-- uservec&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;save sp,tp&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;sepc &amp;lt;-- save PC&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;jump to userret&lt;br&gt;&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="365" y="1070" width="100" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="dtvVOa7GaX0EYQpvskhJ-95" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="360" y="1175" as="sourcePoint" />
+            <mxPoint x="280" y="1240" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="360" y="1240" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dtvVOa7GaX0EYQpvskhJ-96" value="SRET" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="220" y="1228" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dtvVOa7GaX0EYQpvskhJ-97" value="&lt;div&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;satp &amp;lt;-- Users Page Table&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;restore User&#39;s Regs&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;sstatus&lt;br&gt;&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="365" y="1175" width="130" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
